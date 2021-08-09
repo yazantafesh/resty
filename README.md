@@ -20,7 +20,9 @@
 
 ## Links
 
-Sandbox Deployment Link: https://codesandbox.io/s/cool-bash-6yhvd?file=/src/index.js
+Sandbox Deployment Link: https://codesandbox.io/s/gallant-bassi-9k6vp
+Github Actions: https://github.com/yazantafesh/resty/actions
+
 
 ## UML
 
