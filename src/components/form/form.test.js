@@ -35,24 +35,6 @@ it('Should render results', () => {
   const items = screen.getByTestId('renderedData');
 
   expect(items).toHaveTextContent('fake thing 1');
-  expect(items).toContainHTML(
-    `<pre data-testid="renderedData">{
-  "Headers": {
-    "content-type": "string application/json"
-  },
-  "count": 2,
-  "results": [
-    {
-      "name": "fake thing 1",
-      "url": "http://fakethings.com/1"
-    },
-    {
-      "name": "fake thing 2",
-      "url": "http://fakethings.com/2"
-    }
-  ]
-}</pre>`
-  );
   expect(items).toHaveTextContent('http://fakethings.com/2');
   expect(items).toHaveTextContent('Headers');
 });
