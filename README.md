@@ -20,7 +20,7 @@
 
 ## Links
 
-Sandbox Deployment Link: https://codesandbox.io/s/gallant-bassi-9k6vp
+Sandbox Deployment Link: https://codesandbox.io/s/pedantic-yalow-5hes2
 Github Actions: https://github.com/yazantafesh/resty/actions
 
 ## UML
