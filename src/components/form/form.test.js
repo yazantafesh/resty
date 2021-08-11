@@ -13,28 +13,17 @@ it('need to run a function on button click', async () => {
 });
 
 it('Should render results', () => {
-  const result = {
-    "Headers": {
-      "content-type": "string application/json"
-    },
-    "count": 2,
-    "results": [
-      {
-        "name": "fake thing 1",
-        "url": "http://fakethings.com/1"
+  const data = {
+      Headers:{
+      'content-type': 'string application/json',
       },
-      {
-        "name": "fake thing 2",
-        "url": "http://fakethings.com/2"
-      }
-    ]
+      count: 2,
+      results: [
+          {name: 'fake thing 1', url: 'http://fakethings.com/1'},
+          {name: 'fake thing 2', url: 'http://fakethings.com/2'},
+      ],
   };
-
-  render(<Results data={result} />);
-
+  render(<Results data={data} />);
   const items = screen.getByTestId('renderedData');
-
-  expect(items).toHaveTextContent('fake thing 1');
-  expect(items).toHaveTextContent('http://fakethings.com/2');
-  expect(items).toHaveTextContent('Headers');
+  expect(items).toHaveTextContent('[ { "name": "fake thing 1", "url": "http://fakethings.com/1" }, { "name": "fake thing 2", "url": "http://fakethings.com/2" } ]');
 });
