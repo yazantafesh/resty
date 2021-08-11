@@ -20,7 +20,7 @@
 
 ## Links
 
-Sandbox Deployment Link: https://codesandbox.io/s/pedantic-yalow-5hes2
+Sandbox Deployment Link: https://codesandbox.io/s/confident-sea-q57h2
 Github Actions: https://github.com/yazantafesh/resty/actions
 
 ## UML
